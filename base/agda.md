@@ -43,3 +43,17 @@ not false = true
 
 
 ```
+
+
+
+<!--  -->
+
+
+
+
+
+```agda
+
+open import  general-notation 
+
+```
