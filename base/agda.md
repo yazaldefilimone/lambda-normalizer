@@ -29,3 +29,17 @@ _  =
   ∎
 
 ```
+
+
+
+```agda
+-- t
+data Bool : Set where
+  true false : Bool
+--- fn
+not : Bool → Bool
+not true = false
+not false = true
+
+
+```
