@@ -77,5 +77,17 @@ x x
 
 
 ```h
+zero
+
+type N {
+  value: zero
+  succ: N -> N
+}
+
+N.succ(zero) +  N.succ(zero)
+
+suc((suc(zero))) = 2
+
+f(x) = f(y) = y(x)
 
 ```
