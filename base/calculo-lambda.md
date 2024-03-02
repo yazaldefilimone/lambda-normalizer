@@ -59,8 +59,6 @@ const False = (x:p) => (y:p)=>  y;
 
 ```js
 
-const log = (an) => console.log(an);
-
 // console.log(((x) => (y) => y + x)(10)(20));
 
 // console.log(((x) => x + 2)(10));
@@ -74,7 +72,7 @@ const log = (an) => console.log(an);
 // x[x:= 10]
 // 2. (λx(λy.10y)) 20
 // y[y:=20]
-// 3. (λx(λy.1020))
+// 3. (λx(λy.10 20))
 
 // let y = 10;
 // ((x) => (y) => x+y)(10);
@@ -143,4 +141,14 @@ const three = (x, y) => x(x(x(y)));
 
 
 */
+```
+
+
+
+
+```h
+if = λp.λx.λy.p x y
+fact = λf.λn.if(n=0) 1 (n * f(n-1))
+(fact 5)
+
 ```
