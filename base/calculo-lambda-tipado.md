@@ -5,7 +5,6 @@
 
 
 ```ts
-
 (λf: (Int -> Int) -> Int. f(λx: Int. x + 1)) (λx: Int. x * x)
 (λx:Int. (λx: Int.x+1) * (λx: Int.x+1)) 2
 ((λx: Int.x+1) 2 * (λx: Int.x+1) 2)
