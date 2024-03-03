@@ -1,12 +1,16 @@
-module hello-world where
+-- {-#  BUILTIN  NATPLUS  _+_  ​​#-} 
+-- {-#  BUILTIN  NATTIMES  _*_  #-} 
+-- {-#  BUILTIN  NATMINUS  _∸_  #-}
 
-open import Agda.Builtin.IO using (IO)
-open import Agda.Builtin.Unit using (⊤)
-open import Agda.Builtin.String using (String)
+-- importar Data.Nat usando (ℕ; zero; suc; _+_; _*_; _^_; _∸_)
 
-postulate putStrLn : String → IO ⊤
-{-# FOREIGN GHC import qualified Data.Text as T #-}
-{-# COMPILE GHC putStrLn = putStrLn . T.unpack #-}
 
-main : IO ⊤
-main = putStrLn "Hello world!"
+data Bin : Set where
+  ⟨⟩ : Bin
+  _O : Bin → Bin
+  _I : Bin → Bin
+
+
+inc : Bin → Bin
+
+inc ⟨⟩ = _I ⟨⟩
