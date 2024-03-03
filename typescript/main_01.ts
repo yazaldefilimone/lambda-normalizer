@@ -85,8 +85,17 @@ type Term =
     return parseTerm();
   }
   const _term = mini_parser_legacy('(λx. x) y');
+  /*
+
+
+  y
+  
+  
+  
+  
+  */
   console.log(_term);
   
-  // const normalizedTerm = normalize(_term);
-  // console.log(normalizedTerm); 
+  const normalizedTerm = normalize(_term);
+  console.log(normalizedTerm); 
   
