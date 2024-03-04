@@ -3,10 +3,7 @@
 --
 -- The NBE implementation is based on a presentation by Sam Lindley from 2016:
 -- http://homepages.inf.ed.ac.uk/slindley/nbe/nbe-cambridge2016.pdf
---
--- Adapted to handle terms with explicitly typed contexts (Sam's slides only
--- consider open terms with the environments left implicit/untyped). This was a
--- pain in the ass to figure out.
+
 
 module MinimalNBE where
 
