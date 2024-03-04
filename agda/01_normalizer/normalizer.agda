@@ -8,7 +8,7 @@
 -- consider open terms with the environments left implicit/untyped). This was a
 -- pain in the ass to figure out.
 
-module MinimalNBE where
+module Normalizer where
 
 open import Level
 open import Data.Empty
